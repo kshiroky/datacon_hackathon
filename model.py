@@ -47,7 +47,7 @@ plt.show()
 
 # categorical columns
 category = ["Cell_type", "Coat", "Line_Primary_Cell", "Animal", "Cell_morphology", "Cell_age",
-            "Cell_organ", "Test"]
+            "Cell_organ", "Test", "Elements"]
 # minmax scaling
 to_scale_df = db.drop(category, axis=1)
 scaled_data = preprocessing.MinMaxScaler().fit_transform(to_scale_df)
