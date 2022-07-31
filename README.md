@@ -20,6 +20,8 @@ model.py - файл с кодом для модели RandomForestRegressor
 
 svr_model.py - код для модели StackingRegressor на базе RandomForestRegressor и SVR
 
+cat_model.py - код для модели CatBoostRegressor
+
 Все файлы .xlsx, находящиеся в репозитории, загружены для удобства работы программ
 
 Если произошла ошибка при загрузке базы данных, перезапустите код, могли возникнуть неполадки в интернет-соединении
