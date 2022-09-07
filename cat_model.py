@@ -20,7 +20,7 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from catboost import Pool, cv
 
-db = pd.read_excel('https://raw.githubusercontent.com/kshiroky/datacon_hackathon/main/final_output.xlsx')
+db = pd.read_excel('https://raw.githubusercontent.com/nikolAIchem/datacon_hackathon/main/final_output.xlsx')
 db = db.drop('Unnamed: 0', axis=1)
 out_index = db[db["Viability (%)"] == db["Viability (%)"].max()].index
 db.drop(out_index, inplace=True)
