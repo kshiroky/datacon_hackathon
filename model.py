@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # upload data
-database = "https://raw.githubusercontent.com/nikolAIchem/datacon_hackathon/main/final_output.xlsx"
+database = "https://raw.githubusercontent.com/nikolaichem/datacon_hackathon/main/final_output.xlsx"
 db = pd.read_excel(database, index_col=0)
 
 # a bit of statistics
