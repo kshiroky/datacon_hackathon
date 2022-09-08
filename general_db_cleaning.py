@@ -4,7 +4,7 @@ from pymatgen.core import Composition
 from pymatgen.core.periodic_table import ElementBase, Element
 from pymatgen.core.ion import Ion
 
-Result = "https://raw.githubusercontent.com/nikolAIchem/datacon_hackathon/main/general_db.xlsx"
+Result = "https://raw.githubusercontent.com/nikolaichem/datacon_hackathon/main/general_db.xlsx"
 
 result = pd.read_excel(Result, header=0)
 col_ls = result.columns
