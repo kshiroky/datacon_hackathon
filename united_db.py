@@ -8,7 +8,7 @@ from pymatgen.core import Composition
 # functions for processing the original databases
 def db1():
     # upload data
-    raw_data = pd.read_excel("https://raw.githubusercontent.com/kshiroky/datacon_hackathon/main/Database_1.xlsx")
+    raw_data = pd.read_excel("https://raw.githubusercontent.com/nikolaichem/datacon_hackathon/main/Database_1.xlsx")
     col_ls = raw_data.columns
 
     # clean the df
@@ -41,7 +41,7 @@ def db1():
 
 def db2():
     # upload data
-    raw_df = pd.read_excel("https://raw.githubusercontent.com/kshiroky/datacon_hackathon/main/Database_2.xlsx",
+    raw_df = pd.read_excel("https://raw.githubusercontent.com/nikolaichem/datacon_hackathon/main/Database_2.xlsx",
                            header=0)
     col_ls = raw_df.columns
 
@@ -169,7 +169,7 @@ def db2():
 
 
 def db3():
-    Database_3 = "https://raw.githubusercontent.com/kshiroky/datacon_hackathon/main/Database_3.xlsx"
+    Database_3 = "https://raw.githubusercontent.com/nikolaichem/datacon_hackathon/main/Database_3.xlsx"
 
     raw_data = pd.read_excel(Database_3, header=0)
 
@@ -204,7 +204,7 @@ def db3():
 
 
 def db4():
-    Database_4 = "https://raw.githubusercontent.com/kshiroky/datacon_hackathon/main/Database_4.xlsx"
+    Database_4 = "https://raw.githubusercontent.com/nikolaichem/datacon_hackathon/main/Database_4.xlsx"
     raw_data = pd.read_excel(Database_4, header=0)
     raw_data = raw_data.sort_values(by="Elements", ignore_index=True)
     col_ls = raw_data.columns
@@ -227,7 +227,7 @@ def db4():
 
 
 def db5():
-    Database_5 = "https://raw.githubusercontent.com/kshiroky/datacon_hackathon/main/Database_5.xlsx"
+    Database_5 = "https://raw.githubusercontent.com/nikolaichem/datacon_hackathon/main/Database_5.xlsx"
     database_5 = pd.read_excel(Database_5, header=0)
     database_5.rename(columns={"material": "Material", "core_size": "Core_size (nm)", "hydro_size": "Diameter (nm)",
                                "surf_charge": "Surface_Charge (mV)", "surf_area": "Surface area (m2/g)",
